@@ -10,8 +10,6 @@ ENV N8N_PROTOCOL=https
 ENV NODE_ENV=production
 ENV N8N_BASIC_AUTH_ACTIVE=true
 
-# Create necessary directories
-RUN mkdir -p /data/.n8n/workflows
 
 # Copy workflow files
 COPY workflows/*.json /data/.n8n/workflows/
@@ -22,4 +20,4 @@ EXPOSE 5678
 
 
 # Start n8n
-CMD ["n8n", "start"]
+CMD ["n8n"]
