@@ -1,0 +1,29 @@
+{
+  "name": "uvuvi-n8n-backend",
+  "version": "1.0.0",
+  "description": "Uvuvi Tek n8n ML Backend for Smart Aquaculture",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "postinstall": "node setup-workflows.js"
+  },
+  "dependencies": {
+    "n8n": "^1.15.0",
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "n8n",
+    "workflow",
+    "automation",
+    "ml",
+    "iot",
+    "aquaculture"
+  ],
+  "author": "Uvuvi Tek",
+  "license": "MIT"
+}
