@@ -16,9 +16,6 @@ RUN mkdir -p /data/.n8n/workflows
 # Copy workflow files
 COPY workflows/*.json /data/.n8n/workflows/
 
-# Make sure n8n has proper permissions
-RUN chown -R node:node /data
-
 # Switch to node user
 USER node
 
